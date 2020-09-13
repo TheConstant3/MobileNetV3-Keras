@@ -1,4 +1,4 @@
-# MobileNetV3 model (Keras implementation)
+# MobileNetV3 small model (Keras implementation)
 
 ## Start training (with Docker):
 ```
