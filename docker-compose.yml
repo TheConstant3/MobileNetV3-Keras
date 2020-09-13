@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  tensorflow:
+    container_name: tensorflow
+    build:
+      context: ./etc/docker/
+    command: python3 train.py
+    tty: true
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - CUDA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all
+      - GPU=1
+      - CUDNN=1
+    volumes:
+      - ./src:/usr/src/app
