@@ -1,4 +1,4 @@
-## Commands run from project dir:
+# MobileNetV3 model (Keras implementation)
 
 ## Start training (with Docker):
 ```
